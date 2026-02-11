@@ -1,0 +1,35 @@
+# requirements.txt
+# System deps (Ubuntu/Debian) for building the C++ extension + OpenCV GUI:
+#   sudo apt-get update
+#   sudo apt-get install -y build-essential python3-dev libeigen3-dev libgl1 libglib2.0-0
+
+# --- build tooling (for `python -m pip install .`) ---
+setuptools==80.3.1
+#wheel==0.46.3
+#build==1.4.0
+packaging==26.0
+
+# --- core runtime ---
+numpy==2.2.6
+scipy==1.15.3
+opencv-contrib-python==4.13.0.92
+
+# --- demo / viz / utils (used by typical OpenCV + Ultralytics pipelines) ---
+matplotlib==3.10.8
+pillow==12.1.0
+PyYAML==6.0.3
+#tqdm==4.67.3
+requests==2.32.5
+psutil==7.2.2
+sahi==0.11.36
+
+# --- YOLO11 (Ultralytics) ---
+ultralytics==8.4.14
+
+# PyTorch (IMPORTANT):
+# On Linux, for CUDA/ROCm you usually must install from the official PyTorch index URL.
+# If plain `pip install -r requirements.txt` can't find torch/torchvision/torchaudio,
+# install them separately using a command from https://pytorch.org/get-started/previous-versions/
+torch==2.10.0
+torchvision==0.25.0
+#torchaudio==2.7.0

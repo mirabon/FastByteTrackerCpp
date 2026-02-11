@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bytetrack-cpp"
+version = "0.1.1"
+description = "Minimal Python bindings for a C++ BYTETrack implementation"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [{name = "FastByteTrack"}]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: C++",
+  "Operating System :: OS Independent",
+]
